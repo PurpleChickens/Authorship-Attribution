@@ -7,7 +7,7 @@ word_tokenizer = nltk.tokenize.RegexpTokenizer(r'\w+')
 
 # load data
 data_folder = r"corpus"
-files = sorted(glob.glob(os.path.join(data_folder, "*")))
+files = sorted(glob.glob(os.path.join(data_folder, "*.txt")))
 books = []
 for fn in files:
     with open(fn) as f:
